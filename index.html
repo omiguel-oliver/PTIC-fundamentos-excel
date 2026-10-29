@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Apostila Digital: Introdução ao Excel (Fundamentos)</title>
+</head>
+<body>
+
+    <header>
+        <h1>Apostila Digital Interativa: Introdução ao Excel</h1>
+        <p>Projetos de Tecnologia da Informação e Comunicação (PTIC) | Etec</p>
+        <p>Professor Miguel Oliveira Bezerra</p>
+    </header>
+
+    <div class="container">
+
+        <!-- SLIDE 1 -->
+        <div class="slide-container active" id="slide-1">
+            <div class="slide-header">
+                <h2>1. O que é o Excel e para que serve?</h2>
+                <span class="slide-number">Slide 1 / 6</span>
+            </div>
+            <div class="content">
+                <p>O <strong>Microsoft Excel</strong> é o programa de planilhas eletrônicas mais famoso e utilizado no mundo corporativo, acadêmico e administrativo. Ele faz parte do pacote Microsoft 365 e serve essencialmente para organizar, calcular e analisar grandes volumes de dados com total agilidade e precisão.</p>
+                
+                <h3>Principais Aplicações Práticas:</h3>
+                <ul>
+                    <li><strong>Controle Financeiro:</strong> Criação de planilhas de fluxo de caixa, orçamento doméstico e controle de despesas.</li>
+                    <li><strong>Organização de Dados:</strong> Listas de controle de estoque, cadastros de clientes e cronogramas de tarefas.</li>
+                    <li><strong>Cálculos Automatizados:</strong> Automação de operações matemáticas instantâneas sem necessidade de cálculos manuais.</li>
+                    <li><strong>Geração de Gráficos:</strong> Transformação de tabelas numéricas em gráficos visuais claros para relatórios e apresentações.</li>
+                </ul>
+
+                <div class="callout-box">
+                    <p>💡 <strong>Dica Profissional:</strong> Dominar o Excel é uma das competências mais exigidas pelo mercado de trabalho em praticamente todas as áreas de atuação!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="slide-container" id="slide-2">
+            <div class="slide-header">
+                <h2>2. O Ambiente de Trabalho e a Anatomia da Planilha</h2>
+                <span class="slide-number">Slide 2 / 6</span>
+            </div>
+            <div class="content">
+                <p>Ao abrir o Excel, você se depara com uma grande grade retangular dividida em colunas e linhas. Essa estrutura matricial é a base de funcionamento de qualquer planilha eletrônica.</p>
+                
+                <h3>Estrutura Básica:</h3>
+                <ul>
+                    <li><strong>Colunas:</strong> São representadas por <strong>Letras</strong> maiúsculas dispostas no sentido vertical (Coluna A, B, C, D...).</li>
+                    <li><strong>Linhas:</strong> São representadas por <strong>Números</strong> dispostos no sentido horizontal (Linha 1, 2, 3, 4...).</li>
+                    <li><strong>Célula:</strong> É a unidade básica, o cruzamento exato entre uma coluna e uma linha. Cada célula possui um endereço único.</li>
+                </ul>
+
+                <div class="callout-box">
+                    <p>📍 <strong>Exemplo de Endereço:</strong> Se você clicar na coluna A na linha 1, o endereço dessa célula será <strong>A1</strong>. Esse endereço é essencial para referenciar dados em fórmulas matemáticas.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="slide-container" id="slide-3">
+            <div class="slide-header">
+                <h2>3. Digitação e Formatação Básica de Dados</h2>
+                <span class="slide-number">Slide 3 / 6</span>
+            </div>
+            <div class="content">
+                <p>Inserir dados no Excel é intuitivo, mas aplicar uma formatação visual adequada garante uma apresentação profissional e legível:</p>
+
+                <h3>Diretrizes de Preenchimento e Visual:</h3>
+                <ul>
+                    <li><strong>Entrada de Dados:</strong> Clique diretamente na célula desejada para inserir textos (rótulos) ou números (valores numéricos).</li>
+                    <li><strong>Cabeçalhos em Destaque:</strong> A primeira linha de uma tabela deve possuir formatação diferenciada (fundo destacado, texto em negrito e centralizado).</li>
+                    <li><strong>Correção de Largura:</strong> Caso apareça o erro <code>#####</code> em uma célula, significa que a coluna está muito estreita. Basta redimensionar a largura da coluna.</li>
+                    <li><strong>Bordas e Alinhamento:</strong> Utilize as ferramentas de borda na barra superior para estruturar visualmente a tabela.</li>
+                </ul>
+
+                <table class="table-example">
+                    <tr>
+                        <th>Produto (Coluna A)</th>
+                        <th>Quantidade (Coluna B)</th>
+                        <th>Preço Unitário (Coluna C)</th>
+                    </tr>
+                    <tr>
+                        <td>Caderno Universitário</td>
+                        <td>10</td>
+                        <td>R$ 15,00</td>
+                    </tr>
+                    <tr>
+                        <td>Caneta Esferográfica</td>
+                        <td>25</td>
+                        <td>R$ 2,50</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- SLIDE 4 -->
+        <div class="slide-container" id="slide-4">
+            <div class="slide-header">
+                <h2>4. Introdução a Fórmulas e Operadores Matemáticos</h2>
+                <span class="slide-number">Slide 4 / 6</span>
+            </div>
+            <div class="content">
+                <p>O grande diferencial do Excel é a sua capacidade de calcular dados automaticamente utilizando fórmulas matemáticas estruturadas.</p>
+
+                <div class="warning-box">
+                    <p>⚠️ <strong>REGRA DE OURO DO EXCEL:</strong> Toda e qualquer fórmula deve obrigatoriamente iniciar com o sinal de igual (<code>=</code>). Sem ele, o Excel interpretará a expressão como um mero texto comum!</p>
+                </div>
+
+                <h3>Operadores Aritméticos Básicos:</h3>
+                <ul>
+                    <li>Adição (Soma): <code>+</code> (Exemplo: <code>=A1 + B1</code>)</li>
+                    <li>Subtração: <code>-</code> (Exemplo: <code>=A1 - B1</code>)</li>
+                    <li>Multiplicação: <code>*</code> (Exemplo: <code>=A1 * 2</code>)</li>
+                    <li>Divisão: <code>/</code> (Exemplo: <code>=A1 / 4</code>)</li>
+                </ul>
+
+                <p>Sempre utilize os <strong>endereços das células</strong> (como <code>A1</code>) em vez de digitar números fixos, pois assim a planilha se atualiza automaticamente caso os dados sejam alterados.</p>
+            </div>
+        </div>
+
+        <!-- SLIDE 5 -->
+        <div class="slide-container" id="slide-5">
+            <div class="slide-header">
+                <h2>5. Primeiras Funções Básicas: SOMA e MÉDIA</h2>
+                <span class="slide-number">Slide 5 / 6</span>
+            </div>
+            <div class="content">
+                <p>As <strong>Funções</strong> são rotinas de cálculo pré-programadas pelo Excel para agilizar operações complexas ou extensas em grandes blocos de dados.</p>
+
+                <h3>Funções Fundamentais do Dia a Dia:</h3>
+                <ul>
+                    <li>
+                        <strong>Função SOMA:</strong> Utilizada para somar rapidamente um intervalo contínuo de células.<br>
+                        Sintaxe padrão: <code>=SOMA(A1:A5)</code><br>
+                        <em>Soma todos os valores compreendidos desde a célula A1 até A5.</em>
+                    </li>
+                    <br>
+                    <li>
+                        <strong>Função MÉDIA:</strong> Utilizada para calcular a média aritmética de um grupo de valores numéricos.<br>
+                        Sintaxe padrão: <code>=MEDIA(B1:B10)</code><br>
+                        <em>Soma os valores do intervalo e divide automaticamente pela quantidade de elementos.</em>
+                    </li>
+                </ul>
+
+                <div class="callout-box">
+                    <p>📌 <strong>Nota Técnica:</strong> O símbolo de dois pontos (<code>:</code>) indica um intervalo contínuo ("até"). Portanto, <code>(A1:A5)</code> significa de A1 até A5.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SLIDE 6 -->
+        <div class="slide-container" id="slide-6">
+            <div class="slide-header">
+                <h2>6. Conclusão e Próximos Passos</h2>
+                <span class="slide-number">Slide 6 / 6</span>
+            </div>
+            <div class="content">
+                <p>Parabéns por concluir esta introdução teórica aos fundamentos do Microsoft Excel! Com estes conceitos assimilados, você possui a base estrutural necessária para iniciar a construção de planilhas.</p>
+
+                <h3>Resumo Geral dos Conceitos:</h3>
+                <ul>
+                    <li>Entendimento das planilhas eletrônicas e suas aplicações profissionais.</li>
+                    <li>Navegação matricial por Linhas, Colunas e Células.</li>
+                    <li>Formatação visual de tabelas e ajuste de larguras.</li>
+                    <li>Aplicação da regra do sinal de igual (<code>=</code>) em fórmulas.</li>
+                    <li>Utilização das funções essenciais <strong>SOMA</strong> e <strong>MÉDIA</strong>.</li>
+                </ul>
+
+                <div class="callout-box">
+                    <p>🚀 <strong>Próximo Passo:</strong> Na nossa próxima aula em laboratório, colocaremos estes conceitos em prática abrindo o software e criando nossa primeira planilha oficial!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- NAVIGATION BAR -->
+    <div class="navigation">
+        <button class="btn" id="prev-btn" onclick="changeSlide(-1)" disabled>⬅️ Anterior</button>
+        <span id="progress-text">Slide 1 de 6</span>
+        <button class="btn" id="next-btn" onclick="changeSlide(1)">Próximo ➡️</button>
+    </div>
+
+    <footer>
+        <p>Componente Curricular: Projetos de Tecnologia da Informação e Comunicação (PTIC) | Professor Miguel Oliveira Bezerra | Etec</p>
+    </footer>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 6;
+
+        function updateSlide() {
+            for (let i = 1; i <= totalSlides; i++) {
+                document.getElementById(`slide-${i}`).classList.remove('active');
+            }
+            document.getElementById(`slide-${currentSlide}`).classList.add('active');
+            document.getElementById('progress-text').innerText = `Slide ${currentSlide} de ${totalSlides}`;
+            document.getElementById('prev-btn').disabled = currentSlide === 1;
+            document.getElementById('next-btn').disabled = currentSlide === totalSlides;
+        }
+
+        function changeSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide < 1) currentSlide = 1;
+            if (currentSlide > totalSlides) currentSlide = totalSlides;
+            updateSlide();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
